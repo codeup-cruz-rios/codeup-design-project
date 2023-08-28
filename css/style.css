@@ -1,51 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+body {
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+}
 .page-wrapper {
     background-color: #F0F0F0;
-}
-a {
-    font-family: 'Abel', sans-serif;
-     font-weight: 400;
 }
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
 }
-.design-icon {
+.icon ul li{
     font-family: 'Anton', sans-serif;
     color: white;
-    background-color: #e6563b;
     border-radius: 100%;
     border: 5px solid white;
     width: 80px;
     height: 80px;
     line-height: 70px;
+}
+.design-icon {
+    background-color: #e6563b;
 }
 .develop-icon {
-    font-family: 'Anton', sans-serif;
-    color: white;
     background-color: #eb9d3a;
-    border-radius: 100%;
-    border: 5px solid white;
-    width: 80px;
-    height: 80px;
-    line-height: 70px;
 }
 .support-icon {
-    font-family: 'Anton', sans-serif;
-    color: white;
     background-color: #7cb06c;
-    border-radius: 100%;
-    border: 5px solid white;
-    width: 80px;
-    height: 80px;
-    line-height: 70px;
 }
 .host-icon {
-    font-family: 'Anton', sans-serif;
-    color: white;
     background-color: #00aba9;
+}
+.card-img-top {
+    border: 8px solid #E6E6E6;
+    max-height: 13rem;
+}
+.main-icons ul li {
+    font-family: 'Anton', sans-serif;
     border-radius: 100%;
-    border: 5px solid white;
-    width: 80px;
-    height: 80px;
-    line-height: 70px;
+    width: 20px;
+    height: 20px;
 }
