@@ -6,3 +6,46 @@ a {
     font-family: 'Abel', sans-serif;
      font-weight: 400;
 }
+h1, h2, h3 {
+    font-family: 'Anton', sans-serif;
+}
+.design-icon {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: #e6563b;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+}
+.develop-icon {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: #eb9d3a;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+}
+.support-icon {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: #7cb06c;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+}
+.host-icon {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: #00aba9;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+}
