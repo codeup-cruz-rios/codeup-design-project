@@ -9,6 +9,9 @@ body {
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
 }
+h3{
+    font-size: 30px;
+}
 .icon ul li{
     font-family: 'Anton', sans-serif;
     color: white;
@@ -32,11 +35,16 @@ h1, h2, h3 {
 }
 .card-img-top {
     border: 8px solid #E6E6E6;
-    max-height: 13rem;
+    width: 350px;
+    height: 250px;
 }
 .main-icons ul li {
     font-family: 'Anton', sans-serif;
     border-radius: 100%;
     width: 20px;
     height: 20px;
+}
+.last-imgs {
+    height: 105px;
+    width: 105px;
 }
