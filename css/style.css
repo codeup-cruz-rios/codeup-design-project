@@ -2,9 +2,10 @@
 body {
     font-family: 'Abel', sans-serif;
     font-size: 18px;
+    text-transform: uppercase;
 }
-.page-wrapper {
-    background-color: #F0F0F0;
+.page-wrapper , nav{
+    background-color: #F8F9FA;
 }
 .nav-item {
     font-size: 12px;
@@ -12,18 +13,13 @@ body {
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
 }
+h1 {
+    font-size: 60px;
+}
 h3{
     font-size: 30px;
 }
-.icon ul li{
-    font-family: 'Anton', sans-serif;
-    color: white;
-    border-radius: 100%;
-    border: 5px solid white;
-    width: 80px;
-    height: 80px;
-    line-height: 70px;
-}
+/*line 22 - 49 --- realized that all the list item icons were the same colors, so we made class names for each color*/
 .design-icon {
     background-color: #e6563b;
 }
@@ -36,10 +32,15 @@ h3{
 .host-icon {
     background-color: #00aba9;
 }
-.card-img-top {
-    border: 8px solid #E6E6E6;
-    min-width: 350px;
-    min-height: 250px;
+/*header and main body icon styling*/
+.icon ul li{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
 }
 .main-icons ul li {
     font-family: 'Anton', sans-serif;
@@ -48,11 +49,71 @@ h3{
     height: 20px;
     font-size: 14px;
 }
-.last-imgs {
-    height: 105px;
-    width: 105px;
+.card-img-top {
+    border: 8px solid #E6E6E6;
+    min-width: 350px;
+    min-height: 250px;
 }
+.selected {
+    padding: 3rem;
+}
+.last-imgs {
+    height: 80px;
+    width: 80px;
+}
+/*small screen*/
+@media screen and (max-width: 699px){
+    /*adjusted the container to be in the center because it was off when we displayed:none certain areas*/
+    .logo , .last-section{
+        display: none;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    hr {
+        display: none;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .col-one {
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+    ul{
+        display: flex;
+        padding: 5px;
+    }
+    ul li .support-icon , ul li .host-icon {
+        display: inline-block;
+
+    }
+    .selected {
+        padding-top: 1rem;
+    }
+    button {
+        display: flex;
+        justify-content: end;
+    }
+}
+/*medium screen*/
 @media screen and (max-width:1050px){
+
     .last-section{
         display: none;
     }
@@ -72,34 +133,23 @@ h3{
         justify-content: center;
         align-items: center;
     }
+
 }
-@media screen and (max-width: 800px){
+/* LINE 54 Here is where we flexed the separated ul's to place them on top of each other on small screens*/
+@media screen and (min-width: 700px) and (max-width: 1024px){
     .logo , .last-section{
         display: none;
     }
-    .navbar {
-
-    }
-    h1 {
+    .icon {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        gap: 20px;
     }
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-     .col-one {
-        display: flex;
-         flex-direction: column;
-         align-items: center;
-    }
-
 }
+/*this is where we align the header icons to be side by side insteadof on top of each other for medium to xl screens*/
+@media screen and (min-width: 1025px){
+    .icon {
+        display: flex;
+        gap: 20px;
+    }
+}
+
