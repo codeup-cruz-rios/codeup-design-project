@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+body {
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+}
+.page-wrapper {
+    background-color: #F0F0F0;
+}
+h1, h2, h3 {
+    font-family: 'Anton', sans-serif;
+}
+h3{
+    font-size: 30px;
+}
+.icon ul li{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+}
+.design-icon {
+    background-color: #e6563b;
+}
+.develop-icon {
+    background-color: #eb9d3a;
+}
+.support-icon {
+    background-color: #7cb06c;
+}
+.host-icon {
+    background-color: #00aba9;
+}
+.card-img-top {
+    border: 8px solid #E6E6E6;
+    width: 350px;
+    height: 250px;
+}
+.main-icons ul li {
+    font-family: 'Anton', sans-serif;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.last-imgs {
+    height: 105px;
+    width: 105px;
+}

@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Codeup Design Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="page-wrapper" style="background-color: darkgrey">
@@ -15,23 +16,25 @@
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
                         <div>
-                            <a class="navbar-brand" href="#"> <img src="logo.png"> Navbar</a>
+                            <a class="navbar-brand" href="#" style="font-size: 30px"> <img src="logo.png" style="height: 52px; width: 52px"> codeup design</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <div class="collapse navbar-collapse ps-3" id="navbarNav">
+
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link" href="#">SERVICES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Work</a>
+                                    <a class="nav-link" href="#">WORK</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="#">BLOG</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" >Contact</a>
+                                    <a class="nav-link" >CONTACT</a>
                                 </li>
                             </ul>
                         </div>
@@ -39,90 +42,114 @@
                 </nav>
             </div>
         </div>
-        <header class="container">
-            <div class="row">
-                <div class="col">
-                   <h1>Visual Design & Web Development</h1>
-                    <h2>From Park City, Utah</h2>
-                    <ul>
-                        <li>Design</li>
-                        <li>Develop</li>
-                        <li>Support</li>
-                        <li>Host</li>
-                    </ul>
-
+        <header class="container d-flex flex-grow-1">
+            <div class="row align-items-center w-100">
+                <div class="col d-flex flex-column align-items-center py-5">
+                   <h1 style="font-size: 60px;">Visual Design & Web Development</h1>
+                    <h2 class="py-4" style="font-size: 40px">From Park City, Utah</h2>
+                    <div class="justify-content-center align-items-center icon">
+                        <ul class="d-flex list-unstyled gap-4 text-center">
+                            <li class="design-icon">Design</li>
+                            <li class="develop-icon">Develop</li>
+                            <li class="support-icon">Support</li>
+                            <li class="host-icon">Host</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
-        <main class="container">
-            <div class="row">
-                <div class="col">
-                    <div>
-                        Selected Work
-                    </div>
-                    <img src="images/apple-ipad.jpg">
-                    <p>Featured Product</p>
-                    <ul>
-                        <li>D</li>
-                        <li>D</li>
-                        <li>S</li>
-                        <li>H</li>
-                    </ul>
+        <main class="container d-flex">
+            <div class="row d-flex">
+                <div class="p-5 text-center">
+                    Selected Work
                 </div>
-                <div class="col">
-                    <img src="images/macbook.jpg">
-                    <p>Featured Product</p>
-                    <ul>
-                        <li>D</li>
-                        <li>D</li>
-                        <li>S</li>
-                        <li>H</li>
-                    </ul>
+
+               <div class="col d-flex flex-wrap gap-3">
+                   <div class="card" style="width: 20rem; background: none; border: none;">
+                       <img src="images/apple-ipad.jpg" class="card-img-top" alt="ipad">
+                       <div class="d-flex justify-content-between">
+                           <p class="card-text">Featured Product</p>
+                           <div class="justify-content-center main-icons">
+                               <ul class="d-flex list-unstyled gap-2 text-center">
+                                   <li class="design-icon">D</li>
+                                   <li class="develop-icon">D</li>
+                                   <li class="support-icon">S</li>
+                                   <li class="host-icon">H</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card" style="width: 20rem; background: none; border: none;">
+                       <img src="images/macbook.jpg" class="card-img-top" alt="macbook">
+                       <div class="d-flex justify-content-between">
+                           <p class="card-text">Featured Product</p>
+                           <div class="justify-content-center align-items-center main-icons">
+                               <ul class="d-flex list-unstyled gap-2 text-center">
+                                   <li class="design-icon">D</li>
+                                   <li class="develop-icon">D</li>
+                                   <li class="support-icon">S</li>
+                                   <li class="host-icon">H</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card" style="width: 20rem; background: none; border: none;">
+                       <img src="images/man.jpg" class="card-img-top" alt="wierd man">
+                       <div class="d-flex justify-content-between">
+                           <p class="card-text">Featured Product</p>
+                           <div class="justify-content-center align-items-center main-icons">
+                               <ul class="d-flex list-unstyled gap-2 text-center">
+                                   <li class="design-icon">D</li>
+                                   <li class="develop-icon">D</li>
+                                   <li class="support-icon">S</li>
+                                   <li class="host-icon">H</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card" style="width: 20rem; background: none; border: none;">
+                       <img src="images/security.jpg" class="card-img-top" alt="security">
+                       <div class="d-flex justify-content-between">
+                           <p class="card-text">Featured Product</p>
+                           <div class="justify-content-center align-items-center main-icons">
+                               <ul class="d-flex list-unstyled gap-2 text-center">
+                                   <li class="design-icon">D</li>
+                                   <li class="develop-icon">D</li>
+                                   <li class="support-icon">S</li>
+                                   <li class="host-icon">H</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+                   </div>
                 </div>
-                <div class="col">
-                    <img src="images/man.jpg">
-                    <p>Featured Product</p>
-                    <ul>
-                        <li>D</li>
-                        <li>D</li>
-                        <li>S</li>
-                        <li>H</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <img src="images/security.jpg">
-                    <p>Featured Product</p>
-                    <ul>
-                        <li>D</li>
-                        <li>D</li>
-                        <li>S</li>
-                        <li>H</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div>The Last</div>
-                        <div>
-                            <img src="images/mobile-phone.jpg">
-                                <h3>The admin bar and absolute positioning</h3>
+
+
+        <aside class="container">
+            <div class="row d-flex flex-column justify-content-between">
+                <div class="col flex-shrink">
+                    <div class="p-5 text-center">The Last</div>
+                        <div class="p-5">
+                        <div class="d-flex py-4">
+                            <img src="images/mobile-phone.jpg" class="last-imgs">
+                            <h3>The admin bar and absolute positioning</h3>
                         </div>
-                        <div>
-                            <img src="images/head.jpg">
-                                <h3>Nibbler awesome website testing</h3>
+                        <div class="d-flex py-4">
+                            <img src="images/head.jpg" class="last-imgs">
+                            <h3>Nibbler awesome website testing</h3>
                         </div>
-                        <div>
-                            <img src="images/ipad.jpg">
+                        <div class="d-flex py-4">
+                            <img src="images/ipad.jpg" class="last-imgs">
                             <h3>How to get google to like you</h3>
                         </div>
-                    </div>
-                    <div class="col">
-                        Last Tweet
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum molestias quibusdam sapiente. Alias, consequatur deserunt, enim expedita fuga harum mollitia quae quam, repellendus sunt tempore voluptate. Dolorum expedita vel voluptatem!</p>
-                    </div>
+                        </div>
+                </div>
+                <div class="col">
+                    Last Tweet
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dolorum molestias quibusdam sapiente. Alias, consequatur deserunt, enim expedita fuga harum mollitia quae quam, repellendus sunt tempore voluptate. Dolorum expedita vel voluptatem!</p>
                 </div>
             </div>
+             </aside>
         </main>
     </div>
 
