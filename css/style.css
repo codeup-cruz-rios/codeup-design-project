@@ -35,8 +35,8 @@ h3{
 }
 .card-img-top {
     border: 8px solid #E6E6E6;
-    width: 350px;
-    height: 250px;
+    min-width: 350px;
+    min-height: 250px;
 }
 .main-icons ul li {
     font-family: 'Anton', sans-serif;
