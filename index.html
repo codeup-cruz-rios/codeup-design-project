@@ -12,19 +12,18 @@
 <body>
     <div class="page-wrapper">
         <div class="row">
-            <div class="col ">
+            <div class="col">
+            <!--Nav bar imported using various layouts from bootstrap-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                        <div>
-                            <a class="navbar-brand" href="#" style="font-size: 30px"> <img src="logo.png" style="height: 52px; width: 52px"> codeup design</a>
+                        <a class="navbar-brand" href="#"> <img src="logo.png" style="height: 52px; width: 52px"> </a>
+                        <p class="logo" style="margin:0; font-size:25px; text-transform: none">codeup design</p>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        </div>
-
                         <div class="collapse navbar-collapse ps-3" id="navbarNav">
-
-                            <ul class="navbar-nav">
+                            <!--used a nested anchor tag in unordered list items-->
+                            <ul class="navbar-nav mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">SERVICES</a>
                                 </li>
@@ -43,31 +42,43 @@
                 </nav>
             </div>
         </div>
+
+<!--        HEADER-->
+
         <header class="container d-flex flex-grow-1">
             <div class="row align-items-center w-100">
                 <div class="col d-flex flex-column align-items-center py-5">
-                   <h1 style="font-size: 60px;">Visual Design & Web Development</h1>
+                   <h1>Visual Design & Web Development</h1>
                     <h2 class="py-4" style="font-size: 40px">From Park City, Utah</h2>
                     <div class="justify-content-center align-items-center icon">
-                        <ul class="d-flex list-unstyled gap-4 text-center">
+                    <!--separated unordered list into two in order to get them to stack on a small screen-->
+                    <!--see line 22 for styling-->
+                        <ul class="d-flex list-unstyled gap-4 text-center icon">
                             <li class="design-icon">Design</li>
                             <li class="develop-icon">Develop</li>
+                        </ul>
+                        <ul class="d-flex list-unstyled gap-4 text-center">
                             <li class="support-icon">Support</li>
                             <li class="host-icon">Host</li>
                         </ul>
                     </div>
                 </div>
             </div>
+
         </header>
-        <main class="container d-flex">
+        <div class="container">
+            <hr>
+        </div>
+        <main class="container d-flex flex-grow-2">
             <div class="row d-flex justify-content-center">
-                <div class="col flex-grow align-items-center">
-                <div class="p-5 text-center">
+                <!--used the bootstrap grid system to align column to take up 7 out of 12 spaces-->
+                <div class="col flex-grow align-items-center col-lg-7">
+                <div class="text-center selected">
                     Selected Work
                 </div>
-
-               <div class="col d-flex flex-wrap gap-3">
-                   <div class="card" style="width: 20rem; background: none; border: none;">
+                <!--divided four cards into two columns to get them to align both on top and side by side-->
+               <div class="col d-flex gap-4 pb-2 col-one">
+                   <div class="card" style="width: 22rem; background: none; border: none;">
                        <img src="images/apple-ipad.jpg" class="card-img-top" alt="ipad">
                        <div class="d-flex justify-content-between">
                            <p class="card-text">Featured Product</p>
@@ -81,7 +92,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="card" style="width: 20rem; background: none; border: none;">
+                   <div class="card" style="width: 22rem; background: none; border: none;">
                        <img src="images/macbook.jpg" class="card-img-top" alt="macbook">
                        <div class="d-flex justify-content-between">
                            <p class="card-text">Featured Product</p>
@@ -95,8 +106,9 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col d-flex gap-3">
-                   <div class="card" style="width: 20rem; background: none; border: none;">
+               </div>
+                   <div class="col d-flex gap-4 pt-3 col-one">
+                   <div class="card" style="width: 22rem; background: none; border: none;">
                        <img src="images/man.jpg" class="card-img-top" alt="wierd man">
                        <div class="d-flex justify-content-between">
                            <p class="card-text">Featured Product</p>
@@ -110,45 +122,43 @@
                            </div>
                        </div>
                    </div>
-                   <div class="card" style="width: 20rem; background: none; border: none;">
-                       <img src="images/security.jpg" class="card-img-top" alt="security">
-                       <div class="d-flex justify-content-between">
-                           <p class="card-text">Featured Product</p>
-                           <div class="justify-content-center align-items-center main-icons">
-                               <ul class="d-flex list-unstyled gap-2 text-center">
-                                   <li class="design-icon">D</li>
-                                   <li class="develop-icon">D</li>
-                                   <li class="support-icon">S</li>
-                                   <li class="host-icon">H</li>
-                               </ul>
+                       <div class="card" style="width: 22rem; background: none; border: none;">
+                           <img src="images/security.jpg" class="card-img-top" alt="security">
+                           <div class="d-flex justify-content-between">
+                               <p class="card-text">Featured Product</p>
+                               <div class="justify-content-center align-items-center main-icons">
+                                   <ul class="d-flex list-unstyled gap-2 text-center">
+                                       <li class="design-icon">D</li>
+                                       <li class="develop-icon">D</li>
+                                       <li class="support-icon">S</li>
+                                       <li class="host-icon">H</li>
+                                   </ul>
+                               </div>
                            </div>
                        </div>
                    </div>
-                   </div>
-                </div>
-                </div>
-                <div class="col col-lg-3">
-                    <div class="p-5 text-center">The Last</div>
-                        <div class="d-flex py-4 gap-3">
+               </div>
+                    <!--used bootstrap grid to have this column take up 4 out of 12 spaces, leaving 1 space between this column and the above column-->
+                    <div class="col col-lg-4 last-section">
+                        <div class="p-5 text-center">The Last</div>
+                        <div class="d-flex pb-3 gap-3">
                             <img src="images/mobile-phone.jpg" class="last-imgs">
                             <h3>The admin bar and absolute positioning</h3>
                         </div>
-                        <div class="d-flex py-4 gap-3">
-                            <img src="images/head.jpg" class="last-imgs">
-                            <h3>Nibbler awesome website testing</h3>
+                            <div class="d-flex py-3 gap-3">
+                                <img src="images/head.jpg" class="last-imgs">
+                                <h3>Nibbler awesome website testing</h3>
+                            </div>
+                            <div class="d-flex py-3 gap-3">
+                                <img src="images/ipad.jpg" class="last-imgs">
+                                <h3>How to get google to like you</h3>
+                            </div>
+                        <div>
+                            Last Tweet
+                            <p style="text-transform: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dolorum molestias quibusdam sapiente. Alias, consequatur deserunt, enim expedita fuga harum mollitia quae quam, repellendus sunt tempore voluptate.</p>
                         </div>
-                        <div class="d-flex py-4 gap-3">
-                            <img src="images/ipad.jpg" class="last-imgs">
-                            <h3>How to get google to like you</h3>
-                        </div>
-                        </div>
-                </div>
-                <div class="col">
-                    Last Tweet
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dolorum molestias quibusdam sapiente. Alias, consequatur deserunt, enim expedita fuga harum mollitia quae quam, repellendus sunt tempore voluptate. Dolorum expedita vel voluptatem!</p>
-                </div>
+                    </div>
             </div>
-             </aside>
         </main>
     </div>
 
